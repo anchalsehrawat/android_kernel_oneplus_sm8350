@@ -8,7 +8,7 @@
 		track,fast_chg_break_t_thd = <1000>;
 		track,general_chg_break_t_thd = <200>;
 		track,voocphy_type = <4>;
-		track,wired_max_power = <80000>;
+		track,wired_max_power = <45000>;
 		track,wired_fast_chg_scheme = <1>;
 	};
 };
@@ -23,15 +23,8 @@
 				3000
 				3500
 				4000
-				4500
-				5000
-				5500
-				6000
-				6300
-				6500
-				7000
-				7500>;
-	qcom,vooc-max-input-current-support = <7300>;
+				4500>;
+	qcom,vooc-max-input-current-support = <4500>;
 	svooc_charge_curve {
 		strategy_soc_0_to_50 {
 			strategy_temp_normal_low =	<4304 73 55 0
@@ -40,8 +33,8 @@
 							 4520 13 13 1>;
 			strategy_temp_normal_high =	<4304 73 55 0
 							 4484 60 35 0
-							 4514 40 15 0
-							 4520 15 15 1>;
+							 4495 40 15 0
+							 4500 15 15 1>;
 		};
 	};
 };
@@ -56,15 +49,8 @@
 				3000
 				3500
 				4000
-				4500
-				5000
-				5500
-				6000
-				6300
-				6500
-				7000
-				7500>;
-	qcom,vooc-max-input-current-support = <7300>;
+				4500>;
+	qcom,vooc-max-input-current-support = <4500>;
 	svooc_charge_curve {
 		strategy_soc_0_to_50 {
 			strategy_temp_normal_low =	<4304 73 55 0
@@ -73,8 +59,8 @@
 							 4520 13 13 1>;
 			strategy_temp_normal_high =	<4304 73 55 0
 							 4484 60 35 0
-							 4514 40 15 0
-							 4520 15 15 1>;
+							 4495 40 15 0
+							 4500 15 15 1>;
 		};
 	};
 };

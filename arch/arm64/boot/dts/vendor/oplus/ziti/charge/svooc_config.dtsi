@@ -5,12 +5,12 @@ qcom,supported_hiz_gnd_cable;
 qcom,vooc_fw_update_newmethod;
 qcom,smart_chg_bcc_support;
 qcom,vooc-low-temp = <0>;
-qcom,vooc-high-temp = <500>;
+qcom,vooc-high-temp = <400>;
 qcom,vooc-low-soc = <1>;
 qcom,vooc-high-soc = <90>;
-qcom,vooc-normal-high-temp = <440>;
+qcom,vooc-normal-high-temp = <360>;
 qcom,vooc-warm-allow-soc = <50>;
-qcom,vooc-warm-allow-vol = <4000>;
+qcom,vooc-warm-allow-vol = <3500>;
 
 qcom,vooc-little-cold-temp = <50>;
 qcom,vooc-cool-temp = <120>;
@@ -21,7 +21,7 @@ qcom,vooc_batt_over_high_temp = <510>;
 qcom,vooc_multistep_adjust_current_support;
 qcom,vooc_multistep_initial_batt_temp = <1000>;
 
-qcom,vooc_strategy_normal_current = <0x13>;
+qcom,vooc_strategy_normal_current = <0x05>;
 qcom,vooc_over_high_or_low_current = <0x0>;
 
 qcom,vooc_strategy1_batt_high_temp0 = <366>;
@@ -36,7 +36,7 @@ qcom,vooc_strategy1_high_current1 = <0x0a>;//5.5A
 qcom,vooc_strategy1_high_current2 = <0x05>;//3A
 qcom,vooc_strategy1_low_current2 = <0x0a>;//5.5A
 qcom,vooc_strategy1_low_current1 = <0x0e>;//7A
-qcom,vooc_strategy1_low_current0 = <0x13>;//9.1A
+qcom,vooc_strategy1_low_current0 = <0x0a>;//5.5A
 
 qcom,abnormal_adapter_current = <0x00 0x00 0x09 0x09 0x07 0x07 0x05 0x05 0x03 0x03>;
 
@@ -75,18 +75,7 @@ qcom,vooc_current_lvl = <1000
 			3000
 			3500
 			4000
-			4500
-			5000
-			5500
-			6000
-			6300
-			6500
-			7000
-			7500
-			8000
-			8500
-			9000
-			9500>;
+			4500>;
 
 qcom,svooc_0_to_50_little_cold_stop_cur = <1000>;
 qcom,svooc_0_to_50_cold_stop_cur = <1000>;
@@ -113,8 +102,8 @@ qcom,svooc_86_to_90_little_cool_stop_cur = <1000>;
 qcom,svooc_86_to_90_normal_low_stop_cur = <1000>;
 qcom,svooc_86_to_90_normal_high_stop_cur = <1200>;
 
-qcom,vooc-max-input-volt-support = <11000>;     //11V
-qcom,vooc-max-input-current-support = <9100>;   //9.1A
+qcom,vooc-max-input-volt-support = <10000>;     //10V
+qcom,vooc-max-input-current-support = <7000>;   //7A
 
 vooc_charge_strategy_30w {
 	strategy_1 {
@@ -127,8 +116,8 @@ vooc_charge_strategy_30w {
 	strategy_2 {
 		capacity_range = <0 75>;
 		temp_range = <160 410>;
-		input_current = <6000 4200 900
-				5000 4200 0
+		input_current = <4500 4200 900
+				4500 4200 0
 				4500 4450 0
 				4000 4450 0
 				3000 4470 0
@@ -156,7 +145,7 @@ vooc_charge_strategy_65w {
 	strategy_1 {
 		capacity_range = <0 50>;
 		temp_range = <120 160>;
-		input_current = <6000 4200 0
+		input_current = <4500 4200 0
 				4000 4454 0
 				2000 4494 0
 				1500 4500 0>;
@@ -164,9 +153,9 @@ vooc_charge_strategy_65w {
 	strategy_2 {
 		capacity_range = <0 50>;
 		temp_range = <160 370>;
-		input_current = <6500 4200 0
-				6000 4250 300
-				5500 4300 400
+		input_current = <4500 4200 0
+				4500 4250 300
+				4500 4300 400
 				4500 4454 780
 				3500 4454 0
 				2000 4494 0
@@ -175,9 +164,9 @@ vooc_charge_strategy_65w {
 	strategy_3 {
 		capacity_range = <0 90>;
 		temp_range = <370 430>;
-		input_current = <6500 4200 0
-				6000 4250 300
-				5500 4300 400
+		input_current = <4500 4200 0
+				4500 4250 300
+				4500 4300 400
 				4500 4454 780
 				3500 4454 0
 				2000 4494 0
